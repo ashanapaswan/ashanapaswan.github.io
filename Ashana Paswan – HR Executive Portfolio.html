@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ashana Paswan – HR Executive</title>
+<meta name="description" content="Portfolio of Ashana Paswan, HR Executive specialising in end-to-end recruitment, onboarding and HR operations.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Hanken+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F1F5F4; --surface:#FFFFFF; --ink:#16212B; --muted:#4F5F6B; --line:#CBD6D3;
+  --accent:#1E4D8C; --accent-ink:#FFFFFF; --soft:#DCE8F5;
+  --display:"Bricolage Grotesque","Segoe UI",Arial,sans-serif;
+  --body:"Hanken Grotesk","Segoe UI",Arial,sans-serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#0F1519;--surface:#172128;--ink:#E8EEF0;--muted:#A3B2BA;--line:#2B3A43;--accent:#8DB8F2;--accent-ink:#0F1519;--soft:#1D3047;color-scheme:dark}
+}
+:root[data-theme="dark"]{--bg:#0F1519;--surface:#172128;--ink:#E8EEF0;--muted:#A3B2BA;--line:#2B3A43;--accent:#8DB8F2;--accent-ink:#0F1519;--soft:#1D3047;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--body)}
+.wrap{max-width:900px;margin:0 auto;padding:0 22px}
+h1,h2,h3{font-family:var(--display);line-height:1.1;margin:0}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+section{padding:56px 0 8px}
+h2{font-size:clamp(26px,4vw,34px);font-weight:700;margin-bottom:8px}
+.lead{color:var(--muted);max-width:60ch;margin:0 0 26px}
+
+header.hero{padding:64px 0 24px}
+.hero h1{font-size:clamp(46px,10vw,92px);font-weight:800;letter-spacing:-.03em}
+.hero .role{font-family:var(--display);font-size:clamp(20px,3vw,28px);font-weight:500;margin:14px 0 18px;color:var(--accent)}
+.hero p{max-width:58ch;margin:0 0 24px;font-size:18px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:12px 20px;border-radius:8px;font-weight:700;text-decoration:none;border:2px solid var(--accent)}
+.btn.primary{background:var(--accent);color:var(--accent-ink)}
+.btn.ghost{color:var(--accent)}
+
+.pipeline{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px}
+.stages{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin:0 0 20px;padding:0;list-style:none}
+.stages li{position:relative}
+.stages li:not(:last-child)::after{content:"";position:absolute;top:22px;left:50%;width:100%;height:3px;background:var(--line);z-index:0}
+.stages button{all:unset;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:8px;width:100%;position:relative;z-index:1;text-align:center;font:700 14px/1.2 var(--body);padding:0 2px 4px}
+.stages .dot{width:44px;height:44px;border-radius:50%;background:var(--surface);border:3px solid var(--line);display:grid;place-items:center;font:700 16px var(--display);color:var(--muted)}
+.stages button[aria-selected="true"] .dot{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.stages button:focus-visible{outline:3px solid var(--accent);outline-offset:4px;border-radius:8px}
+.panel{background:var(--soft);border-radius:10px;padding:18px 20px;min-height:116px}
+.panel h3{font-size:20px;margin-bottom:6px}
+.panel p{margin:0}
+.thread{margin:16px 0 0;color:var(--muted);font-size:15px}
+
+.job{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:24px;margin-bottom:18px}
+.job header{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 16px;margin-bottom:10px}
+.job h3{font-size:22px}
+.job .co{color:var(--muted);font-weight:500}
+.job time{font-weight:700;color:var(--accent)}
+.job ul{margin:0;padding-left:20px}
+.job li{margin:6px 0}
+
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.skills div{border-top:3px solid var(--accent);padding-top:12px}
+.skills h3{font-size:19px;margin-bottom:8px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+.chips li{background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:4px 12px;font-size:15px}
+
+.edu{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px 24px}
+.edu h3{font-size:20px}
+.edu p{margin:4px 0 0;color:var(--muted)}
+
+.contact{margin-top:56px;background:var(--accent);color:var(--accent-ink);padding:44px 0 40px}
+.contact h2{margin-bottom:10px}
+.contact a{color:var(--accent-ink);font-weight:700;font-size:20px;overflow-wrap:anywhere}
+.contact p{margin:6px 0}
+footer{padding:18px 0 28px;color:var(--muted);font-size:14px}
+
+@media (max-width:640px){
+  body{font-size:16px}
+  .stages{grid-template-columns:1fr;gap:6px}
+  .stages li::after{display:none}
+  .stages button{flex-direction:row;text-align:left;gap:12px;padding:4px 0}
+  .stages .dot{width:38px;height:38px;flex:none}
+}
+@media (prefers-reduced-motion:no-preference){.panel{animation:swap .25s ease}}
+@keyframes swap{from{opacity:.4}to{opacity:1}}
+</style>
+</head>
+<body>
+<header class="hero"><div class="wrap">
+  <h1>Ashana Paswan</h1>
+  <div class="role">HR Executive · Recruitment &amp; HR Operations</div>
+  <p>I run hiring from the first manpower request to the candidate’s joining day, and keep the records, follow-ups and reports in order along the way.</p>
+  <div class="btns">
+    <a class="btn primary" href="mailto:ashanapaswan@gmail.com">Email me</a>
+    <a class="btn ghost" href="tel:+918960018770">Call 8960018770</a>
+  </div>
+</div></header>
+
+<main class="wrap">
+<section aria-labelledby="how">
+  <h2 id="how">How I run a hire</h2>
+  <p class="lead">Select a stage to see what I handle there.</p>
+  <div class="pipeline">
+    <ol class="stages" role="tablist" aria-label="Hiring stages" id="tabs"></ol>
+    <div class="panel" id="panel" role="tabpanel" aria-live="polite"></div>
+    <p class="thread">Throughout: I update recruitment trackers and candidate databases, and share hiring status reports with HR and management.</p>
+  </div>
+</section>
+
+<section aria-labelledby="exp">
+  <h2 id="exp">Experience</h2>
+  <article class="job">
+    <header><div><h3>HR Executive</h3><div class="co">Elite 24 Property Consulting Company</div></div><time>Aug 2025 – Present</time></header>
+    <ul>
+      <li>Manage end-to-end recruitment: job posting, sourcing, screening, shortlisting and interview coordination.</li>
+      <li>Work with sales, pre-sales, digital marketing and management to meet workforce requirements.</li>
+      <li>Follow up on candidate pipelines to meet hiring requirements.</li>
+      <li>Support onboarding, documentation and joining formalities; maintain employee records, attendance and leave data.</li>
+      <li>Prepare offer letters, appointment-related documents and employee communications.</li>
+      <li>Communicate company policies, work processes, attendance requirements and performance expectations.</li>
+      <li>Assist management with employee engagement and performance follow-up.</li>
+    </ul>
+  </article>
+  <article class="job">
+    <header><div><h3>HR Recruiter &amp; Admin</h3><div class="co">Shivgange Enterprises, Gwalior</div></div><time>Oct 2024 – Jul 2025</time></header>
+    <ul>
+      <li>Managed the full recruitment cycle, from manpower requirements to candidate joining.</li>
+      <li>Sourced candidates through Apna, Job Hai and referrals; wrote and posted job descriptions on multiple platforms.</li>
+      <li>Screened resumes, shortlisted candidates and held initial telephonic interviews.</li>
+      <li>Coordinated interviews with hiring managers and followed up on results, documents and joining dates.</li>
+      <li>Handled pre-joining formalities and assisted with onboarding and orientation.</li>
+    </ul>
+  </article>
+</section>
+
+<section aria-labelledby="sk">
+  <h2 id="sk">Skills</h2>
+  <div class="skills">
+    <div><h3>Recruitment</h3><ul class="chips"><li>End-to-end hiring</li><li>Sourcing</li><li>Job postings</li><li>Resume screening</li><li>Telephonic interviews</li><li>Interview coordination</li></ul></div>
+    <div><h3>HR operations</h3><ul class="chips"><li>Onboarding &amp; offboarding</li><li>Employee records</li><li>Offer letters</li><li>Attendance &amp; leave</li><li>Payroll coordination</li><li>HR policy coordination</li></ul></div>
+    <div><h3>Employee relations</h3><ul class="chips"><li>Engagement</li><li>Grievance handling</li><li>Performance support</li><li>Training coordination</li></ul></div>
+    <div><h3>Tools &amp; channels</h3><ul class="chips"><li>MS Office</li><li>Google Workspace</li><li>HRIS / HR-CRM</li><li>Recruitment trackers</li><li>Apna</li><li>Job Hai</li></ul></div>
+  </div>
+</section>
+
+<section aria-labelledby="ed">
+  <h2 id="ed">Education &amp; languages</h2>
+  <div class="edu">
+    <h3>Bachelor of Education (B.Ed.)</h3>
+    <p>VBSPU, 2019–2021</p>
+    <p>Languages: English, Hindi</p>
+  </div>
+</section>
+</main>
+
+<div class="contact"><div class="wrap">
+  <h2>Let’s talk about your next hire</h2>
+  <p>Based in Varanasi, Uttar Pradesh</p>
+  <p><a href="mailto:ashanapaswan@gmail.com">ashanapaswan@gmail.com</a></p>
+  <p><a href="tel:+918960018770">8960018770</a></p>
+</div></div>
+<footer><div class="wrap">© Ashana Paswan</div></footer>
+
+<script>
+var stages=[
+ ["Requirement","Understand manpower needs with hiring managers and departments such as sales, pre-sales and digital marketing, so the role is clear before sourcing starts."],
+ ["Sourcing","Write job descriptions and post vacancies on different platforms. Find candidates through Apna, Job Hai, referrals and other channels."],
+ ["Screening","Review resumes, shortlist against skills, experience and job requirements, and hold telephonic interviews to check suitability and availability."],
+ ["Interviews","Schedule interviews between shortlisted candidates and hiring managers, then follow up with candidates on results."],
+ ["Joining","Collect documents, complete pre-joining formalities, prepare offer letters and support onboarding and orientation for new hires."]
+];
+var tabs=document.getElementById("tabs"),panel=document.getElementById("panel"),btns=[];
+function pick(i){
+  btns.forEach(function(b,j){b.setAttribute("aria-selected",j===i?"true":"false");b.tabIndex=j===i?0:-1});
+  var p=panel.cloneNode(false);
+  panel.innerHTML="<h3></h3><p></p>";
+  panel.firstChild.textContent=stages[i][0];
+  panel.lastChild.textContent=stages[i][1];
+  panel.style.animation="none";void panel.offsetWidth;panel.style.animation="";
+}
+stages.forEach(function(s,i){
+  var li=document.createElement("li"),b=document.createElement("button");
+  b.setAttribute("role","tab");
+  b.innerHTML='<span class="dot">'+(i+1)+'</span><span></span>';
+  b.lastChild.textContent=s[0];
+  b.addEventListener("click",function(){pick(i)});
+  b.addEventListener("keydown",function(e){
+    var n=null;
+    if(e.key==="ArrowRight"||e.key==="ArrowDown")n=(i+1)%stages.length;
+    if(e.key==="ArrowLeft"||e.key==="ArrowUp")n=(i+stages.length-1)%stages.length;
+    if(n!==null){e.preventDefault();pick(n);btns[n].focus()}
+  });
+  li.appendChild(b);tabs.appendChild(li);btns.push(b);
+});
+pick(0);
+</script>
+</body>
+</html>
