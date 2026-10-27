@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#f6dce3">
+<meta name="description" content="Vijay & Rashima — a romantic Indian wedding celebration. Explore our love story, wedding events, RSVP, venue, family and more.">
+<meta name="keywords" content="Vijay Rashima wedding, Indian wedding, wedding invitation, RSVP, Haldi, Mehendi, Sangeet, wedding reception">
+<meta property="og:title" content="Vijay & Rashima | Our Wedding">
+<meta property="og:description" content="A beautiful celebration of Vijay and Rashima's love story.">
+<title>Vijay & Rashima — Our Wedding</title>
+<style>
+:root{
+  --blush:#f7dce3;--lav:#e9e1f6;--peach:#f8d8c5;--cream:#fffaf5;--beige:#ead8c5;
+  --gold:#c89b54;--gold2:#e8c886;--ink:#4a3a3d;--muted:#7f6c70;--white:#fff;
+  --glass:rgba(255,255,255,.58);--border:rgba(255,255,255,.72);
+  --shadow:0 20px 55px rgba(91,63,71,.13);--radius:28px;
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;color:var(--ink);background:linear-gradient(180deg,#fff9f7 0%,#fbf2f6 40%,#f9f6fc 100%);
+font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.65}
+h1,h2,h3,.script{font-family:Georgia,"Times New Roman",serif;font-weight:500}
+h1,h2,h3,p{margin-top:0}.container{width:min(1160px,92%);margin:auto}
+section{padding:92px 0;position:relative;overflow:hidden}
+.nav{position:fixed;z-index:50;top:14px;left:50%;transform:translateX(-50%);width:min(1120px,92%);
+padding:10px 14px;border:1px solid var(--border);background:rgba(255,255,255,.68);backdrop-filter:blur(18px);
+-webkit-backdrop-filter:blur(18px);border-radius:999px;box-shadow:0 12px 40px rgba(79,57,65,.1);display:flex;align-items:center;justify-content:space-between}
+.brand{font-family:Georgia,serif;font-size:1.15rem;color:#6e4c57;text-decoration:none;padding-left:10px}
+.navlinks{display:flex;gap:4px;align-items:center}.navlinks a{color:#6e5a60;text-decoration:none;font-size:.83rem;padding:8px 10px;border-radius:999px;transition:.25s}
+.navlinks a:hover{background:#fff;color:#9a6c76}.menu{display:none;border:0;background:transparent;font-size:1.5rem;color:#70545e}
+.hero{min-height:100svh;display:grid;place-items:center;text-align:center;padding-top:120px;background:
+radial-gradient(circle at 10% 20%,rgba(247,220,227,.85),transparent 28%),
+radial-gradient(circle at 90% 25%,rgba(233,225,246,.8),transparent 30%),
+linear-gradient(135deg,#fffaf7,#f8eaf0 48%,#f4effb)}
+.hero:before,.hero:after{content:"";position:absolute;width:300px;height:300px;border-radius:50%;filter:blur(10px);opacity:.3;background:var(--peach)}
+.hero:before{left:-130px;bottom:4%}.hero:after{right:-130px;top:8%;background:var(--lav)}
+.hero-inner{position:relative;z-index:2}.eyebrow{letter-spacing:.24em;text-transform:uppercase;font-size:.72rem;color:#a07982}
+.hero h1{font-size:clamp(4rem,11vw,8.8rem);line-height:.9;margin:18px 0 14px;color:#6c4b55}
+.hero h1 span{font-size:.5em;color:var(--gold);display:inline-block;margin:0 .08em}
+.hero .subtitle{font-family:Georgia,serif;font-style:italic;font-size:clamp(1rem,2.5vw,1.4rem);color:#7f6b70}
+.date-pill{display:inline-flex;margin:25px auto;padding:10px 18px;border:1px solid rgba(200,155,84,.35);background:rgba(255,255,255,.62);border-radius:999px;color:#916f40}
+.hero-art{margin:35px auto 0;width:min(650px,92vw);height:250px;position:relative}
+.couple{position:absolute;left:50%;bottom:0;transform:translateX(-50%);display:flex;align-items:flex-end;gap:10px}
+.person{width:150px;height:205px;position:relative}.head{position:absolute;width:74px;height:74px;border-radius:50%;left:50%;top:10px;transform:translateX(-50%);background:#d99d7c;border:3px solid rgba(92,57,51,.18)}
+.hair{position:absolute;width:82px;height:55px;left:50%;top:0;transform:translateX(-50%);border-radius:50% 50% 38% 38%;background:#38292b}
+.body{position:absolute;left:50%;bottom:0;transform:translateX(-50%);width:112px;height:135px;border-radius:60px 60px 22px 22px}
+.bride .body{background:linear-gradient(135deg,#b83b59,#e16d7f);clip-path:polygon(32% 0,68% 0,100% 100%,0 100%)}
+.groom .body{background:linear-gradient(135deg,#e9ddc7,#fff8e9);border:2px solid #d2c09f}
+.bride .hair{height:70px}.groom .hair{height:38px;top:4px;width:70px}
+.eye{position:absolute;top:43px;width:7px;height:4px;border-radius:50%;background:#553d3d}.eye.l{left:24px}.eye.r{right:24px}
+.smile{position:absolute;top:53px;left:50%;width:20px;height:8px;border-bottom:2px solid #75494d;border-radius:50%;transform:translateX(-50%)}
+.flower{position:absolute;font-size:2rem;filter:drop-shadow(0 4px 6px rgba(0,0,0,.1));animation:float 4s ease-in-out infinite}
+.f1{left:3%;top:25%}.f2{right:4%;top:16%;animation-delay:1s}.f3{left:13%;bottom:8%;animation-delay:2s}
+.heart{position:absolute;font-size:1.2rem;color:#d88397;animation:float 4.5s ease-in-out infinite}
+.h1{left:12%;top:25%}.h2{right:16%;top:31%;animation-delay:1s}.h3{right:28%;top:7%;animation-delay:2s}
+@keyframes float{50%{transform:translateY(-12px) rotate(4deg)}}@keyframes rise{from{transform:translateY(30px);opacity:0}to{transform:translateY(0);opacity:1}}
+.reveal{opacity:0;transform:translateY(24px);transition:.7s ease}.reveal.visible{opacity:1;transform:none}
+.section-head{text-align:center;max-width:720px;margin:0 auto 48px}.kicker{color:#ae7d87;text-transform:uppercase;letter-spacing:.2em;font-size:.7rem}
+.section-head h2{font-size:clamp(2.1rem,5vw,3.7rem);margin:10px 0}.section-head p{color:var(--muted)}
+.glass{background:var(--glass);border:1px solid var(--border);box-shadow:var(--shadow);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-radius:var(--radius)}
+.story{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:center}
+.story-card{padding:34px}.story-card h3{font-size:1.55rem}.timeline{position:relative;padding-left:30px}.timeline:before{content:"";position:absolute;left:8px;top:8px;bottom:8px;width:2px;background:linear-gradient(var(--gold),#e9b5c2)}
+.titem{position:relative;padding:0 0 28px}.titem:before{content:"";position:absolute;left:-28px;top:5px;width:12px;height:12px;background:#fff;border:3px solid var(--gold);border-radius:50%}
+.titem small{color:#a37a5b}.titem h3{margin:3px 0}.titem p{margin:0;color:var(--muted)}
+.events{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}.event{padding:20px;text-align:center;transition:.3s;min-height:250px;display:flex;flex-direction:column;justify-content:flex-end}
+.event:hover{transform:translateY(-8px);box-shadow:0 24px 55px rgba(91,63,71,.18)}.event-art{height:140px;display:grid;place-items:center}
+.event-icon{font-size:4.5rem;filter:drop-shadow(0 8px 10px rgba(120,80,80,.14))}
+.event h3{margin:8px 0 2px;font-size:1.45rem}.event p{font-size:.82rem;color:var(--muted);margin:0}
+.haldi{background:linear-gradient(145deg,#fff7cf,#fff)}.mehendi{background:linear-gradient(145deg,#dff0df,#fff)}.sangeet{background:linear-gradient(145deg,#e9ddf8,#fff)}.wedding{background:linear-gradient(145deg,#f8dce2,#fff)}.reception{background:linear-gradient(145deg,#f3e8d8,#fff)}
+.countdown{padding:38px;text-align:center}.count-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;max-width:720px;margin:25px auto 0}.count-box{padding:20px 10px;background:rgba(255,255,255,.65);border-radius:20px}.count-box strong{display:block;font:2.3rem Georgia;color:#8d6570}.count-box span{font-size:.7rem;text-transform:uppercase;letter-spacing:.15em;color:#9a7f85}
+.scratch-wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:35px;align-items:center}.scratch{width:min(360px,100%);aspect-ratio:1.6;margin:auto;position:relative;border-radius:24px;overflow:hidden;background:linear-gradient(135deg,#d8a95d,#f4dfaa);box-shadow:0 20px 45px rgba(121,83,35,.2);display:grid;place-items:center}
+.scratch canvas{position:absolute;inset:0;width:100%;height:100%;touch-action:none}.scratch-under{font-family:Georgia;font-size:1.35rem;text-align:center;padding:20px}.scratch-under strong{display:block;font-size:1.7rem;color:#9b7140}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.photo{aspect-ratio:1/1.1;border-radius:24px;overflow:hidden;position:relative;cursor:pointer;background:linear-gradient(145deg,#f5dce2,#e9e1f6);display:grid;place-items:center}
+.photo:nth-child(2n){background:linear-gradient(145deg,#e8f0e1,#f8dfcf)}.photo span{font-size:4.5rem;transition:.3s}.photo:hover span{transform:scale(1.12)}.photo:after{content:"Tap to open";position:absolute;bottom:12px;right:12px;padding:5px 9px;border-radius:999px;background:rgba(255,255,255,.75);font-size:.68rem;color:#745c62}
+.modal{position:fixed;inset:0;background:rgba(55,40,46,.72);z-index:100;display:none;align-items:center;justify-content:center;padding:20px}.modal.open{display:flex}.modal-box{max-width:760px;width:100%;padding:16px;background:#fff8f7;border-radius:28px;text-align:center}.modal-art{height:60vh;max-height:600px;border-radius:20px;display:grid;place-items:center;font-size:10rem;background:linear-gradient(145deg,#f7dce3,#e9e1f6)}.close{float:right;border:0;background:#fff;border-radius:50%;width:38px;height:38px;font-size:1.2rem;cursor:pointer}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}.field label{font-size:.78rem;color:#7b676c}.field input,.field select,.field textarea{width:100%;padding:14px 15px;border:1px solid rgba(148,111,120,.18);border-radius:16px;background:rgba(255,255,255,.72);outline:none;color:var(--ink);font:inherit}.field textarea{min-height:120px;resize:vertical}.field input:focus,.field select:focus,.field textarea:focus{border-color:#c89b54;box-shadow:0 0 0 4px rgba(200,155,84,.1)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:999px;padding:13px 20px;background:linear-gradient(135deg,#bd8d4d,#e1bd79);color:#fff;font-weight:700;cursor:pointer;box-shadow:0 12px 25px rgba(161,112,48,.2);transition:.25s}.btn:hover{transform:translateY(-2px)}
+.map{min-height:360px;overflow:hidden}.map iframe{width:100%;height:100%;min-height:360px;border:0}.venue-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.venue-copy{padding:34px}.venue-copy p{color:var(--muted)}.link{color:#986f42;text-decoration:none;font-weight:700}
+.family{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.family-card{text-align:center;padding:26px}.avatar{width:92px;height:92px;border-radius:50%;margin:0 auto 12px;display:grid;place-items:center;font-size:2.5rem;background:linear-gradient(145deg,#f7dce3,#e9e1f6);border:5px solid rgba(255,255,255,.8)}
+.hashtag{text-align:center;padding:55px;background:linear-gradient(135deg,rgba(247,220,227,.75),rgba(233,225,246,.8));}.hashtag h2{font-size:clamp(2.6rem,7vw,5.2rem);color:#8c6370}.hashtag p{color:#806b71}
+.faq{max-width:850px;margin:auto}.faq details{padding:18px 20px;margin:10px 0;background:rgba(255,255,255,.55);border:1px solid var(--border);border-radius:18px}.faq summary{cursor:pointer;font-family:Georgia;font-size:1.05rem}.faq p{margin:12px 0 0;color:var(--muted)}
+.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.info-card{padding:30px}.guestbook{display:grid;grid-template-columns:.8fr 1.2fr;gap:20px}.messages{max-height:420px;overflow:auto;padding-right:4px}.msg{padding:16px;margin-bottom:10px;background:rgba(255,255,255,.55);border-radius:18px}.msg strong{font-family:Georgia}.msg p{margin:4px 0 0;color:var(--muted)}
+.thanks{text-align:center;padding:120px 0 110px;background:radial-gradient(circle at center,rgba(247,220,227,.7),transparent 50%)}.thanks h2{font-size:clamp(3rem,8vw,6rem);margin-bottom:10px}.rings{font-size:2rem;letter-spacing:.25em;color:var(--gold)}
+.footer{text-align:center;padding:25px;color:#927d83;font-size:.8rem;border-top:1px solid rgba(120,90,100,.08)}
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(20px);background:#4f3d43;color:#fff;padding:12px 18px;border-radius:999px;opacity:0;pointer-events:none;transition:.3s;z-index:200}.toast.show{opacity:1;transform:translateX(-50%)}
+@media(max-width:900px){.events{grid-template-columns:repeat(2,1fr)}.family{grid-template-columns:repeat(2,1fr)}.story,.scratch-wrap,.venue-grid,.guestbook{grid-template-columns:1fr}.navlinks{display:none}.menu{display:block}.nav.open .navlinks{display:flex;position:absolute;top:62px;left:0;right:0;flex-direction:column;background:rgba(255,255,255,.95);border-radius:22px;padding:12px}.nav.open .navlinks a{width:100%;text-align:center}.gallery{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){section{padding:72px 0}.hero h1{font-size:4.2rem}.hero-art{height:220px}.person{transform:scale(.8);transform-origin:bottom}.events{grid-template-columns:1fr}.count-grid{grid-template-columns:repeat(2,1fr)}.gallery,.family,.form-grid,.info-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.story-card,.venue-copy,.info-card{padding:24px}.scratch-wrap{gap:20px}}
+</style>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <a class="brand" href="#home">Vijay <span>♥</span> Rashima</a>
+  <button class="menu" id="menu" aria-label="Open menu">☰</button>
+  <div class="navlinks">
+    <a href="#story">Story</a><a href="#events">Events</a><a href="#gallery">Gallery</a>
+    <a href="#rsvp">RSVP</a><a href="#venue">Venue</a><a href="#faqs">FAQs</a>
+  </div>
+</nav>
+
+<main>
+<section class="hero" id="home">
+  <span class="flower f1">🌸</span><span class="flower f2">🌷</span><span class="flower f3">🌼</span>
+  <span class="heart h1">♥</span><span class="heart h2">♡</span><span class="heart h3">♥</span>
+  <div class="hero-inner reveal">
+    <div class="eyebrow">Together with their families</div>
+    <h1>Vijay <span>&</span> Rashima</h1>
+    <p class="subtitle">Two hearts, one beautiful forever.</p>
+    <div class="date-pill">✦ Our wedding celebration ✦</div>
+    <div class="hero-art" aria-label="Illustration of the couple">
+      <div class="couple">
+        <div class="person bride"><div class="head"><i class="eye l"></i><i class="eye r"></i><i class="smile"></i></div><div class="hair"></div><div class="body"></div></div>
+        <div class="person groom"><div class="head"><i class="eye l"></i><i class="eye r"></i><i class="smile"></i></div><div class="hair"></div><div class="body"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="story">
+  <div class="container">
+    <div class="section-head reveal"><div class="kicker">A little piece of forever</div><h2>Our Love Story</h2><p>From the first hello to the day we say “I do”, every chapter brought us closer.</p></div>
+    <div class="story">
+      <div class="story-card glass reveal">
+        <h3>Made of little moments</h3>
+        <p>Replace this text with your real story — how Vijay and Rashima met, the first date, the proposal, favourite memories and the moment you knew this was forever.</p>
+        <div class="rings">♡ ○ ♡</div>
+      </div>
+      <div class="timeline reveal">
+        <div class="titem"><small>Chapter 01</small><h3>The First Hello</h3><p>Where two stories unexpectedly became one.</p></div>
+        <div class="titem"><small>Chapter 02</small><h3>The First Adventure</h3><p>A memory worth smiling about forever.</p></div>
+        <div class="titem"><small>Chapter 03</small><h3>The Promise</h3><p>A question, a yes, and a thousand butterflies.</p></div>
+        <div class="titem"><small>Chapter 04</small><h3>The Forever Begins</h3><p>Now we celebrate with everyone we love.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="events">
+  <div class="container">
+    <div class="section-head reveal"><div class="kicker">Save the moments</div><h2>Wedding Events</h2><p>Five celebrations, five beautiful moods, one unforgettable journey.</p></div>
+    <div class="events">
+      <article class="event glass haldi reveal"><div class="event-art"><span class="event-icon">🌼</span></div><h3>Haldi</h3><p>Yellow outfits · Floral jewellery<br>Venue & time to be announced</p></article>
+      <article class="event glass mehendi reveal"><div class="event-art"><span class="event-icon">🌿</span></div><h3>Mehendi</h3><p>Green ethnic looks · Mehendi décor<br>Venue & time to be announced</p></article>
+      <article class="event glass sangeet reveal"><div class="event-art"><span class="event-icon">✨</span></div><h3>Sangeet</h3><p>Indo-western glamour · Stage lights<br>Venue & time to be announced</p></article>
+      <article class="event glass wedding reveal"><div class="event-art"><span class="event-icon">💍</span></div><h3>Wedding</h3><p>Red lehenga · Cream sherwani<br>Traditional mandap</p></article>
+      <article class="event glass reception reveal"><div class="event-art"><span class="event-icon">🥂</span></div><h3>Reception</h3><p>Elegant formal looks · Luxury décor<br>Venue & time to be announced</p></article>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="countdown glass reveal">
+      <div class="kicker">The big day is coming</div><h2>Counting down to forever</h2>
+      <p id="countdownNote">Add your wedding date in the script to activate the live countdown.</p>
+      <div class="count-grid">
+        <div class="count-box"><strong id="days">—</strong><span>Days</span></div><div class="count-box"><strong id="hours">—</strong><span>Hours</span></div>
+        <div class="count-box"><strong id="mins">—</strong><span>Minutes</span></div><div class="count-box"><strong id="secs">—</strong><span>Seconds</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="scratch">
+  <div class="container">
+    <div class="section-head reveal"><div class="kicker">A little surprise</div><h2>Scratch to Reveal</h2><p>Scratch away the golden layer and discover the wedding date.</p></div>
+    <div class="scratch-wrap">
+      <div class="scratch" id="scratchCard">
+        <div class="scratch-under">Our special day<strong id="scratchDate">Wedding Date</strong><span>✦ Vijay & Rashima ✦</span></div>
+        <canvas id="scratchCanvas"></canvas>
+      </div>
+      <div class="story-card glass reveal">
+        <h3>Made just for our guests</h3>
+        <p>Drag your finger or mouse across the card. The scratch effect is fully interactive and works on mobile and desktop.</p>
+        <p><strong>Tip:</strong> Change <code>WEDDING_DATE</code> in the JavaScript below to your real date. The countdown and scratch card update automatically.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="container">
+    <div class="section-head reveal"><div class="kicker">Memories</div><h2>Our Couple Gallery</h2><p>These placeholders can be replaced with your favourite engagement and pre-wedding photographs.</p></div>
+    <div class="gallery">
+      <div class="photo reveal" data-photo="🌸"><span>🌸</span></div><div class="photo reveal" data-photo="💞"><span>💞</span></div>
+      <div class="photo reveal" data-photo="📸"><span>📸</span></div><div class="photo reveal" data-photo="🌙"><span>🌙</span></div>
+      <div class="photo reveal" data-photo="💍"><span>💍</span></div><div class="photo reveal" data-photo="✨"><span>✨</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="rsvp">
+  <div class="container">
+    <div class="section-head reveal"><div class="kicker">We hope you can join us</div><h2>RSVP</h2><p>Please let us know how you'll be celebrating with us.</p></div>
+    <form class="glass story-card reveal" id="rsvpForm">
+      <div class="form-grid">
+        <div class="field"><label>Guest Name</label><input required name="name" placeholder="Your name"></div>
+        <div class="field"><label>Phone Number</label><input required name="phone" type="tel" placeholder="+91"></div>
+        <div class="field"><label>Number of Guests</label><select name="guests"><option>1</option><option>2</option><option>3</option><option>4</option><option>5+</option></select></div>
+        <div class="field"><label>Attendance</label><select name="attendance"><option>Joyfully attending</option><option>Sorry, can't attend</option><option>Not sure yet</option></select></div>
+        <div class="field"><label>Meal Preference</label><select name="meal"><option>Vegetarian</option><option>Jain</option><option>Non-vegetarian</option><option>No preference</option></select></div>
+        <div class="field"><label>Message</label><input name="message" placeholder="A note for the couple"></div>
+        <div class="field full"><button class="btn" type="submit">Send RSVP ♥</button></div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section id="venue">
+  <div class="container">
+    <div class="section-head reveal"><div class="kicker">Where we celebrate</div><h2>Wedding Venue</h2><p>Replace the sample address and map query with your actual venue.</p></div>
+    <div class="venue-grid">
+      <div class="venue-copy glass reveal">
+        <h3>The Celebration Awaits</h3>
+        <p><strong>Venue Name</strong><br>Wedding venue address goes here<br>City, State, India</p>
+        <p>Parking, entry details and shuttle information can be added here.</p>
+        <a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=India">Get Directions ↗</a>
+      </div>
+      <div class="map glass reveal"><iframe title="Wedding venue map" loading="lazy" src="https://www.google.com/maps?q=India&output=embed"></iframe></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head reveal"><div class="kicker">The people behind our smiles</div><h2>Meet the Family</h2><p>Add your parents, siblings and loved ones here.</p></div>
+    <div class="family">
+      <div class="family-card glass reveal"><div class="avatar">👨‍👩‍👦</div><h3>Vijay's Family</h3><p>With love & blessings</p></div>
+      <div class="family-card glass reveal"><div class="avatar">🌷</div><h3>Rashima's Family</h3><p>With love & blessings</p></div>
+      <div class="family-card glass reveal"><div class="avatar">💐</div><h3>Our Parents</h3><p>Our first teachers of love</p></div>
+      <div class="family-card glass reveal"><div class="avatar">🫶</div><h3>Our Loved Ones</h3><p>Thank you for being here</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container"><div class="hashtag glass reveal"><div class="kicker">Share the love</div><h2>#VijayWedsRashima</h2><p>Use our wedding hashtag when you share your favourite moments.</p></div></div>
+</section>
+
+<section id="faqs">
+  <div class="container">
+    <div class="section-head reveal"><div class="kicker">Good to know</div><h2>FAQs</h2></div>
+    <div class="faq reveal">
+      <details><summary>What should I wear?</summary><p>Haldi: yellow and floral-inspired looks. Mehendi: green/earthy ethnic looks. Sangeet: glamorous Indo-western. Wedding: festive traditional. Reception: elegant formalwear.</p></details>
+      <details><summary>Can I bring a plus-one?</summary><p>Please use the RSVP form to indicate your total number of guests. We will confirm seating details.</p></details>
+      <details><summary>Is there accommodation nearby?</summary><p>Add your preferred hotels, room-block details, booking deadline and contact information here.</p></details>
+      <details><summary>Where can I share photos?</summary><p>Share them with the hashtag <strong>#VijayWedsRashima</strong> or leave a note in the guestbook below.</p></details>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="info-grid">
+      <div class="info-card glass reveal"><div class="kicker">Dress Code</div><h2>Wear the joy</h2><p><strong>Haldi:</strong> yellow, ivory, floral accents.<br><strong>Mehendi:</strong> green, sage, earthy tones.<br><strong>Sangeet:</strong> glamorous Indo-western.<br><strong>Wedding:</strong> festive Indian traditional.<br><strong>Reception:</strong> elegant formal.</p></div>
+      <div class="info-card glass reveal"><div class="kicker">Travel & Stay</div><h2>Come comfortably</h2><p>Add airport/railway directions, recommended hotels, room booking links, local transport and check-in details here.</p><a class="link" href="#venue">View venue details →</a></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head reveal"><div class="kicker">Leave a little love</div><h2>Guestbook</h2><p>Your messages appear instantly in this browser.</p></div>
+    <div class="guestbook">
+      <form class="glass story-card reveal" id="guestForm">
+        <div class="field"><label>Your Name</label><input required name="name" placeholder="Name"></div>
+        <div class="field" style="margin-top:14px"><label>Your Message</label><textarea required name="message" placeholder="Write something sweet..."></textarea></div>
+        <button class="btn" style="margin-top:14px">Sign Guestbook ♥</button>
+      </form>
+      <div class="glass story-card reveal"><div class="messages" id="messages"></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="thanks">
+  <div class="container reveal"><div class="rings">○ 💍 ○</div><h2>Thank You</h2><p>For celebrating love, laughter and a lifetime of togetherness with us.</p><p class="script">With love, Vijay & Rashima</p></div>
+</section>
+</main>
+
+<footer class="footer">Made with love for Vijay & Rashima · © <span id="year"></span></footer>
+<div class="modal" id="modal"><div class="modal-box"><button class="close" id="close">×</button><div class="modal-art" id="modalArt">🌸</div><p style="margin:12px 0 0">Vijay & Rashima</p></div></div>
+<div class="toast" id="toast"></div>
+
+<script>
+/* =========================
+   EDIT THESE DETAILS
+   ========================= */
+const WEDDING_DATE = ""; // Example format: "2027-02-14T18:30:00+05:30"
+const WEDDING_DATE_LABEL = "Wedding Date"; // Replace with a date such as "14 February 2027"
+const VENUE_QUERY = "India"; // Replace with your exact venue name/address
+const DIRECTIONS_QUERY = "India"; // Replace with your exact venue name/address
+
+document.getElementById("year").textContent = new Date().getFullYear();
+document.getElementById("scratchDate").textContent = WEDDING_DATE_LABEL;
+
+const nav=document.getElementById("nav"), menu=document.getElementById("menu");
+menu.addEventListener("click",()=>nav.classList.toggle("open"));
+document.querySelectorAll(".navlinks a").forEach(a=>a.addEventListener("click",()=>nav.classList.remove("open")));
+
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add("visible")}),{threshold:.12});
+document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
+
+function updateCountdown(){
+  if(!WEDDING_DATE){
+    document.getElementById("countdownNote").textContent="Add your wedding date in WEDDING_DATE to activate the live countdown.";
+    return;
+  }
+  const diff=new Date(WEDDING_DATE)-Date.now();
+  if(diff<=0){["days","hours","mins","secs"].forEach(id=>document.getElementById(id).textContent="0");document.getElementById("countdownNote").textContent="Today is the day! ♥";return}
+  document.getElementById("days").textContent=Math.floor(diff/86400000);
+  document.getElementById("hours").textContent=Math.floor(diff/3600000)%24;
+  document.getElementById("mins").textContent=Math.floor(diff/60000)%60;
+  document.getElementById("secs").textContent=Math.floor(diff/1000)%60;
+}
+updateCountdown();setInterval(updateCountdown,1000);
+
+const canvas=document.getElementById("scratchCanvas"), ctx=canvas.getContext("2d");
+function setupScratch(){
+  const r=canvas.getBoundingClientRect(), d=window.devicePixelRatio||1;
+  canvas.width=r.width*d;canvas.height=r.height*d;ctx.scale(d,d);
+  const g=ctx.createLinearGradient(0,0,r.width,r.height);g.addColorStop(0,"#c5964e");g.addColorStop(.5,"#efd18c");g.addColorStop(1,"#b77d37");
+  ctx.fillStyle=g;ctx.fillRect(0,0,r.width,r.height);
+  ctx.fillStyle="rgba(255,255,255,.28)";ctx.font="700 18px Georgia";ctx.textAlign="center";ctx.fillText("SCRATCH ME ✦",r.width/2,r.height/2);
+}
+setupScratch();window.addEventListener("resize",setupScratch);
+let scratching=false,lastX=0,lastY=0;
+function erase(e){
+  if(!scratching)return;const r=canvas.getBoundingClientRect();const x=(e.clientX??e.touches?.[0]?.clientX)-r.left,y=(e.clientY??e.touches?.[0]?.clientY)-r.top;
+  ctx.globalCompositeOperation="destination-out";ctx.lineWidth=34;ctx.lineCap="round";ctx.beginPath();ctx.moveTo(lastX,lastY);ctx.lineTo(x,y);ctx.stroke();lastX=x;lastY=y;
+}
+canvas.addEventListener("pointerdown",e=>{scratching=true;const r=canvas.getBoundingClientRect();lastX=e.clientX-r.left;lastY=e.clientY-r.top});
+canvas.addEventListener("pointermove",erase);window.addEventListener("pointerup",()=>scratching=false);
+
+document.querySelectorAll(".photo").forEach(p=>p.addEventListener("click",()=>{document.getElementById("modalArt").textContent=p.dataset.photo;document.getElementById("modal").classList.add("open")}));
+document.getElementById("close").onclick=()=>document.getElementById("modal").classList.remove("open");
+document.getElementById("modal").addEventListener("click",e=>{if(e.target.id==="modal")e.currentTarget.classList.remove("open")});
+
+function toast(msg){const t=document.getElementById("toast");t.textContent=msg;t.classList.add("show");setTimeout(()=>t.classList.remove("show"),2600)}
+document.getElementById("rsvpForm").addEventListener("submit",e=>{e.preventDefault();toast("RSVP saved locally. Connect this form to your email/database for real submissions.");e.target.reset()});
+
+const guestForm=document.getElementById("guestForm"), messages=document.getElementById("messages");
+function renderMessages(){
+  const list=JSON.parse(localStorage.getItem("vijayRashimaGuestbook")||"[]");
+  messages.innerHTML=list.length?list.map(x=>`<div class="msg"><strong>${escapeHtml(x.name)}</strong><p>${escapeHtml(x.message)}</p></div>`).join(""):"<p style='color:#927d83'>Be the first to leave a message. ♥</p>";
+}
+function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c]))}
+guestForm.addEventListener("submit",e=>{e.preventDefault();const fd=new FormData(e.target);const list=JSON.parse(localStorage.getItem("vijayRashimaGuestbook")||"[]");list.unshift({name:fd.get("name"),message:fd.get("message")});localStorage.setItem("vijayRashimaGuestbook",JSON.stringify(list));renderMessages();e.target.reset();toast("Your love note has been added ♥")});
+renderMessages();
+
+const map=document.querySelector(".map iframe"), direction=document.querySelector(".venue-copy .btn");
+function updateMap(){
+  map.src="https://www.google.com/maps?q="+encodeURIComponent(VENUE_QUERY)+"&output=embed";
+  direction.href="https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(DIRECTIONS_QUERY);
+}
+updateMap();
+</script>
+</body>
+</html>
